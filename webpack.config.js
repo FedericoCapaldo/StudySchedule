@@ -43,7 +43,7 @@ module.exports = {
     emitWarning: false,
     emitError: false,
     failOnWarning: false,
-    failOnError: true
+    failOnError: false
   },
     plugins: [
         new ExtractTextPlugin("style.css", { allChunks: true })
