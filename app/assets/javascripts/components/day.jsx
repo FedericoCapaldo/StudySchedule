@@ -15,7 +15,7 @@ export default class DayComponent extends React.Component {
 
   render() {
     return (
-      <div className="container4 panel panel-primary">
+      <div className="day-box container4 panel panel-primary">
         <div className="panel-heading">
           <h3 className="panel-title">{this.props.name}</h3>
         </div>

@@ -3,5 +3,11 @@ $font-stack: Helvetica, sans-serif;
 body {
     padding-left: 5%;
     padding-right: 5%;
+
+    .day-box {
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
