@@ -1,12 +1,12 @@
 <script>
       React.render(
-        React.createElement(DemoComponent, {}),
-        document.getElementById("container")
+        React.createElement(DayComponent, { name: "<%= @days[0] %>"}),
+        document.getElementById("mondayContainer")
       );
 </script>
 <script>
       React.render(
-        React.createElement(DayComponent, { name: "<%= @days[0] %>"}),
-        document.getElementById("mondayContainer")
+        React.createElement(DayComponent, { name: "<%= @days[1] %>"}),
+        document.getElementById("tuesdayContainer")
       );
 </script>
