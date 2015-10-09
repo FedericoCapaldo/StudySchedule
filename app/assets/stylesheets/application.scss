@@ -2,4 +2,81 @@ $font-stack: Helvetica, sans-serif;
 
 .helloworld {
   font: 100% $font-stack;
+  color: red;
+}
+
+.container1, .container2, .container3, .container4, .container5, .container6, 
+.container7, .container8, .container9, .container10, .container11, .container12 
+{display: inline-block; float: left;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -o-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ box-sizing: border-box;
+ overflow: hidden;
+ position: relative;
+ padding: 0 10px;
+ margin: 10px 0;
+}
+
+.container1  {width:  8.33333333333333%;}
+.container2  {width: 16.66666666666667%;}
+.container3  {width: 25.00000000000000%;}
+.container4  {width: 33.33333333333333%;}
+.container5  {width: 41.66666666666667%;}
+.container6  {width: 50.00000000000000%;}
+.container7  {width: 58.33333333333333%;}
+.container8  {width: 66.66666666666667%;}
+.container9  {width: 75.00000000000000%;}
+.container10 {width: 83.33333333333333%;}
+.container11 {width: 91.66666666666667%;}
+.container12 {width: 100.0000000000000%;}
+
+@media only screen and (min-width: 960px) {
+    /* nimic */
+}
+
+@media only screen and (max-width: 959px) {
+    /* nimic */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container1, .container2, .container3, .container4, .container5, .container6, 
+    .container7, .container8, .container9, .container10, .container11 {
+        width: 50%;
+    }
+    .container12 { width: 100%; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 870px) {
+    /* nimic */
+}
+
+@media only screen and (max-width: 767px) {
+    .container1, .container2, .container3, .container4, .container5, .container6, 
+    .container7, .container8, .container9, .container10, .container11 {
+        width: 50%;
+    }
+    .container12 { width: 100%; }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container1, .container2, .container3, .container4, .container5, .container6, 
+    .container7, .container8, .container9, .container10, .container11 {
+        width: 50%;
+    }
+    .container12 { width: 100%; }
+}
+
+@media only screen and (max-width: 479px) {
+    .container1, .container2, .container3, .container4, .container5, .container6, 
+    .container7, .container8, .container9, .container10, .container11, .container12 {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .container1, .container2, .container3, .container4, .container5, .container6, 
+    .container7, .container8, .container9, .container10, .container11, .container12 {
+        width: 100%;
+    }
 }
