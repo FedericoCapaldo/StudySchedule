@@ -7,7 +7,7 @@ const propTypes = {
 
 const defaultProps = {};
 
-export default class Day extends React.Component {
+export default class DayComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -15,11 +15,11 @@ export default class Day extends React.Component {
 
   render() {
     return (
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title">{this.props.name}</h3>
+      <div className="container4 panel panel-primary">
+        <div className="panel-heading">
+          <h3 className="panel-title">{this.props.name}</h3>
         </div>
-        <div class="panel-body">
+        <div className="panel-body">
           Panel content
         </div>
       </div>
@@ -27,6 +27,6 @@ export default class Day extends React.Component {
   }
 }
 
-MyComponent.displayName = displayName;
-MyComponent.propTypes = propTypes;
-MyComponent.defaultProps = defaultProps;
+DayComponent.displayName = displayName;
+DayComponent.propTypes = propTypes;
+DayComponent.defaultProps = defaultProps;
