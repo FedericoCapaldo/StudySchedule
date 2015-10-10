@@ -11,6 +11,7 @@ const defaultProps = {
 	message: "You gotta study more :("
 };
 
+
 export default class WelcomePanel extends React.Component {
 	constructor(props) {
 		super(props);
