@@ -4,8 +4,8 @@ class WelcomeController < ApplicationController
   	@week = Week.find(5)
   	@monday = @week.days.find_by(name: "Monday")
   	@activities = []
-  	test = "xxx"
+  	test = "test"
   	@activities << { name: test, 
-  					 hour: test }
+  					 hour: testx2 }
   end
 end
