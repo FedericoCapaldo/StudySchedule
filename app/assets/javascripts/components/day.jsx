@@ -4,7 +4,8 @@ const displayName = "Day";
 const propTypes = {
   name: React.PropTypes.string.isRequired,
   isBig: React.PropTypes.bool.isRequired,
-  containerName: React.PropTypes.string
+  containerName: React.PropTypes.string,
+  actcion:  React.PropTypes.array
 };
 
 const defaultProps = {

@@ -7,7 +7,9 @@
 <script>
       React.render(
         React.createElement(DayComponent, { name: "<%= @days[0] %>",
-    										isBig: true}),
+    										                    isBig: true,
+                                            action: <%= @activities %> 
+                                          }),
         document.getElementById("mondayContainer")
       );
 </script>
@@ -18,6 +20,7 @@
         document.getElementById("tuesdayContainer")
       );
 </script>
+<script> console.log("<%= @activities %>")
 <script>
       React.render(
         React.createElement(DayComponent, { name: "<%= @days[2] %>",
