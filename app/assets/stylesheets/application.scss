@@ -31,3 +31,38 @@ body {
     }
   }
 }
+
+
+//weekbar
+.weekbar {
+  border-radius: 5px;
+  background-color: #4E5C6D;
+  margin-right: 15px;
+  margin-left: 9px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+  position: relative;
+  height: 60px;
+}
+
+.left-side {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.right-side {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.center { 
+  font-size: 1.5em;
+  padding-top: 15px;
+  margin: 0 auto;
+  width: 27%;
+}
+
+
+
