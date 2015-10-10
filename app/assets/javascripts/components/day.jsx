@@ -43,9 +43,9 @@ export default class DayComponent extends React.Component {
           <h3 className="panel-title">{this.props.name}</h3>
         </div>
         <div className="panel-body">
-          <p> {this.props.activity1} {this.props.hour1} minutes </p>
-          <p> {this.props.activity2} {this.props.activity2!="" && " "} {this.props.hour2} {this.props.hour2 && "minutes"} {!this.props.activity2 && "\n"}&nbsp;</p>
-          <p> {this.props.activity3} {this.props.activity3!="" && " "} {this.props.hour3} {this.props.hour3 && "minutes"} {!this.props.activity3 && "\n"}&nbsp;</p>
+          <span> {this.props.activity1} {this.props.hour1} minutes </span> <input type="checkbox" /> <br/>
+          <span> {this.props.activity2} {this.props.activity2!="" && " "} {this.props.hour2} {this.props.hour2 && "minutes"} {!this.props.activity2 && "\n"}&nbsp;</span> <input type="checkbox" /> <br/>
+          <span> {this.props.activity3} {this.props.activity3!="" && " "} {this.props.hour3} {this.props.hour3 && "minutes"} {!this.props.activity3 && "\n"}&nbsp;</span> <input type="checkbox" /> <br/> 
         </div>
       </div>
     );
