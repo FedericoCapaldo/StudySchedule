@@ -46,7 +46,6 @@ GEM
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.3.0)
     builder (3.2.2)
-    byebug (5.0.0)
       columnize (= 0.9.0)
     coderay (1.1.0)
     columnize (0.9.0)
@@ -152,7 +151,6 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
-  byebug
   jbuilder (~> 2.0)
   pg
   pry-rails
