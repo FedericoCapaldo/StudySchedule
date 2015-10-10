@@ -8,12 +8,12 @@
       React.render(
         React.createElement(DayComponent, { name: "<%= @days[0] %>",
     										                    isBig: true,
-                                            activity1: "uno",
-                                            activity2: "due",
-                                            activity3: "tre",
-                                            hour1: 100,
-                                            hour2: 100,
-                                            hour3: 200,
+                                            activity1: "<%= @monday_name1 %>",
+                                            activity2: "<%= @monday_name2 %>",
+                                            activity3: "<%= @monday_name3 %>",
+                                            hour1: <%= @monday_hour1 %>,
+                                            hour2: <%= @monday_hour2 %>,
+                                            hour3: <%= @monday_hour3 %>,
                                           }),
         document.getElementById("mondayContainer")
       );
