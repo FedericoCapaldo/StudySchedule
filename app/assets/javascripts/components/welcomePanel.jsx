@@ -26,7 +26,6 @@ export default class WelcomePanel extends React.Component {
           <p>{this.props.message}</p>
   			  <p><a className="btn btn-primary btn-lg">Take me to your leader</a></p>
         </div>
->>>>>>> 5ab3416d103ed44c873cb260bb81dae659557a64
 			</div>
 		);
 	}
