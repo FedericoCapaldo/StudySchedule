@@ -1,5 +1,11 @@
 <script>
       React.render(
+        React.createElement(WelcomePanel, {}),
+        document.getElementById("welcomePanel")
+      );
+</script>
+<script>
+      React.render(
         React.createElement(DayComponent, { name: "<%= @days[0] %>",
     										isBig: true}),
         document.getElementById("mondayContainer")
