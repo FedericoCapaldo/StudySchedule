@@ -22,8 +22,11 @@ export default class WelcomePanel extends React.Component {
 		return (
 			<div className="jumbotron">
 			  <h1>Hello, { this.props.name } </h1>
-			  <p>{this.props.message}</p>
-			  <p><a className="btn btn-primary btn-lg">Take me to your leaders</a></p>
+			  <div className="jumbotron__sub">
+          <p>{this.props.message}</p>
+  			  <p><a className="btn btn-primary btn-lg">Take me to your leader</a></p>
+        </div>
+>>>>>>> 5ab3416d103ed44c873cb260bb81dae659557a64
 			</div>
 		);
 	}
