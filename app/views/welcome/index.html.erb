@@ -8,7 +8,12 @@
       React.render(
         React.createElement(DayComponent, { name: "<%= @days[0] %>",
     										                    isBig: true,
-                                            action: <%= @activities %> 
+                                            activity1: "<%= @monday_name1 %>",
+                                            activity2: "<%= @monday_name2 %>",
+                                            activity3: "<%= @monday_name3 %>",
+                                            hour1: <%= @monday_hour1 %>,
+                                            hour2: <%= @monday_hour2 %>,
+                                            hour3: <%= @monday_hour3 %>,
                                           }),
         document.getElementById("mondayContainer")
       );
@@ -16,21 +21,34 @@
 <script>
       React.render(
         React.createElement(DayComponent, { name: "<%= @days[1] %>",
-    										isBig: true}),
+                                            activity1: "<%= @tuesday_name1 %>",
+                                            activity2: "<%= @tuesday_name2 %>",
+                                            activity3: "<%= @tuesday_name3 %>",
+                                            hour1: <%= @tuesday_hour1 %>,
+                                            hour2: <%= @tuesday_hour2 %>,
+                                            hour3: <%= @tuesday_hour3 %>,
+    							                     			isBig: true}),
         document.getElementById("tuesdayContainer")
       );
 </script>
-<script> console.log("<%= @activities %>")
 <script>
       React.render(
         React.createElement(DayComponent, { name: "<%= @days[2] %>",
-    										isBig: true}),
+    										                    activity1: "<%= @wednesday_name1 %>",
+                                            activity2: "<%= @wednesday_name2 %>",
+                                            hour1: <%= @wednesday_hour1 %>,
+                                            hour2: <%= @wednesday_hour2 %>,
+                                            isBig: true}),
         document.getElementById("wednesdayContainer")
       );
 </script>
 <script>
       React.render(
         React.createElement(DayComponent, { name: "<%= @days[3] %>",
+                                            activity1: "<%= @thursday_name1 %>",
+                                            activity2: "<%= @thursday_name2 %>",
+                                            hour1: <%= @thursday_hour1 %>,
+                                            hour2: <%= @thursday_hour2 %>,
     										isBig: false}),
         document.getElementById("thursdayContainer")
       );
@@ -38,6 +56,8 @@
 <script>
       React.render(
         React.createElement(DayComponent, { name: "<%= @days[4] %>",
+                                            activity1: "<%= @friday_name1 %>",
+                                            hour1: <%= @friday_hour1 %>,
     										isBig: false}),
         document.getElementById("fridayContainer")
       );
@@ -45,6 +65,12 @@
 <script>
       React.render(
         React.createElement(DayComponent, { name: "<%= @days[5] %>",
+                                            activity1: "<%= @saturday_name1 %>",
+                                            hour1: <%= @saturday_hour1 %>,
+                                            activity2: "<%= @saturday_name2 %>",
+                                            hour2: <%= @saturday_hour2 %>,
+
+
     										isBig: false}),
         document.getElementById("saturdayContainer")
       );
@@ -52,6 +78,9 @@
 <script>
       React.render(
         React.createElement(DayComponent, { name: "<%= @days[6] %>",
+                                            activity1: "<%= @sunday_name1 %>",
+                                            hour1: <%= @sunday_hour1 %>,
+
     										isBig: false}),
         document.getElementById("sundayContainer")
       );
