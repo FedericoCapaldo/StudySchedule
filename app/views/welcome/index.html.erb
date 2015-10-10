@@ -1,12 +1,49 @@
 <script>
       React.render(
-        React.createElement(DayComponent, { name: "<%= @days[0] %>"}),
+        React.createElement(DayComponent, { name: "<%= @days[0] %>",
+    										isBig: true}),
         document.getElementById("mondayContainer")
       );
 </script>
 <script>
       React.render(
-        React.createElement(DayComponent, { name: "<%= @days[1] %>"}),
+        React.createElement(DayComponent, { name: "<%= @days[1] %>",
+    										isBig: true}),
         document.getElementById("tuesdayContainer")
+      );
+</script>
+<script>
+      React.render(
+        React.createElement(DayComponent, { name: "<%= @days[2] %>",
+    										isBig: true}),
+        document.getElementById("wednesdayContainer")
+      );
+</script>
+<script>
+      React.render(
+        React.createElement(DayComponent, { name: "<%= @days[3] %>",
+    										isBig: false}),
+        document.getElementById("thursdayContainer")
+      );
+</script> 
+<script>
+      React.render(
+        React.createElement(DayComponent, { name: "<%= @days[4] %>",
+    										isBig: false}),
+        document.getElementById("fridayContainer")
+      );
+</script>
+<script>
+      React.render(
+        React.createElement(DayComponent, { name: "<%= @days[5] %>",
+    										isBig: false}),
+        document.getElementById("saturdayContainer")
+      );
+</script>
+<script>
+      React.render(
+        React.createElement(DayComponent, { name: "<%= @days[6] %>",
+    										isBig: false}),
+        document.getElementById("sundayContainer")
       );
 </script>

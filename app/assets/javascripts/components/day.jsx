@@ -2,20 +2,32 @@ import React from "react";
 
 const displayName = "Day";
 const propTypes = {
-  name: React.PropTypes.string.isRequired
+  name: React.PropTypes.string.isRequired,
+  isBig: React.PropTypes.bool.isRequired,
+  containerName: React.PropTypes.string
 };
 
-const defaultProps = {};
+const defaultProps = {
+};
 
 export default class DayComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    if(this.props.isBig){
+      this.state = {
+        containerName: "day-box container4 panel panel-primary"
+      };
+    }
+    else {
+      this.state = {
+        containerName: "day-box container3 panel panel-primary"
+      };
+    }
   }
 
   render() {
     return (
-      <div className="day-box container4 panel panel-primary">
+      <div className={this.state.containerName}>
         <div className="panel-heading">
           <h3 className="panel-title">{this.props.name}</h3>
         </div>
